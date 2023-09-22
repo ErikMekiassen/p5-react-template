@@ -1,4 +1,5 @@
 
+/*
 let rad = 60; // Width of the shape
 let xpos, ypos; // Starting position of shape
 
@@ -8,8 +9,12 @@ let yspeed = 2.2; // Speed of the shape
 let xdirection = 1; // Left or Right
 let ydirection = 1; // Top to Bottom
 
+const parentDivName = "Game"
+const parentElement = document.getElementById(parentDivName)
+
 function setup() {
-  createCanvas(720, 400);
+  const myCanvas = createCanvas(canvasXLength, canvasYLength);
+  myCanvas.parent(parentDivName)
   noStroke();
   frameRate(30);
   ellipseMode(RADIUS);
@@ -37,3 +42,4 @@ function draw() {
   // Draw the shape
   ellipse(xpos, ypos, rad, rad);
 }
+*/
